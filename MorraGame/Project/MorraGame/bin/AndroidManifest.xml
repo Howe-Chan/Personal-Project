@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chain.morragame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/morra_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name=".APP">
+        <!-- 主界面 -->
+        <activity 
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 排行榜界面-->
+        <activity android:name=".TopActivity"/>
+        <!-- 游戏主界面-->
+        <activity android:name=".GameMainActivity"/>
+        <!-- 设置界面-->
+        <activity android:name=".SettingActivity"/>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#FFFFFF</color><!-- 白色 -->
+    <color name="logo_blue">#248DFA</color><!-- logo蓝 -->
+    <color name="logo_grey">#EDEDED</color><!-- logo灰 -->
+	<color name="light_grey_b1">#B1B1B1</color><!-- 浅灰_b1 -->
+	<color name="light_grey_cc">#CCCCCC</color><!-- 浅灰_cc -->
+	<color name="bg_grey">#F0F5FB</color><!-- 浅灰_背景 -->
+	<color name="red">#FF0033</color><!-- 红色 -->
+	
+</resources>

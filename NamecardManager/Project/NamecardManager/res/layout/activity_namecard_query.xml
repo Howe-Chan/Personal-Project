@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 返回键 -->
+    <ImageButton 
+        android:id="@+id/query_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:background="@drawable/image_button_bg"/>
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_gravity="center_horizontal"
+        android:text="名 片 列 表"
+        android:textSize="18dp"
+        android:textColor="@color/logo_blue"/>
+    <!-- 搜索框 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+       	android:layout_marginTop="5dp">
+       	<!-- 按钮 -->
+        <Button 
+            android:id="@+id/query_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/query_namecard_search"
+            android:text="检索"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@drawable/button_text_color"
+            android:background="@drawable/button_bg"
+            android:gravity="center"/>
+        <!-- 搜索条件 -->
+        <EditText 
+            android:id="@+id/query_edit_search"
+            android:layout_toLeftOf="@id/query_btn_search"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_layout_bg"
+            android:hint="在此输入检索值"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            style="@style/EditText_Style"/>
+    </RelativeLayout>
+    <!-- 搜索结果 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+	    <!-- 标题工具栏 -->
+	    <RelativeLayout 
+	        android:id="@+id/query_title_tools"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="@dimen/margin_left_and_right"
+	        android:layout_marginRight="@dimen/margin_left_and_right">
+	        <!-- 上一页 -->
+	        <Button 
+	            android:id="@+id/query_previous_page"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:text="《上一页"
+	            android:textSize="@dimen/text_size_16"
+	            android:textColor="@drawable/text_btn_color"/>
+	        <!-- 页码 -->
+	        <RelativeLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true">
+		        <LinearLayout 
+		            android:id="@+id/query_title_tools_pages"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:orientation="horizontal">
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="当前第"
+		                android:textSize="14dp"
+		                android:textColor="@color/light_grey_b1"/>
+		            <TextView 
+		                android:id="@+id/query_current_page"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="2dp"
+		                android:text="--"
+		                android:textSize="14dp"
+		                android:textColor="@color/logo_blue"/>
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="2dp"
+		                android:text="页，共"
+		                android:textSize="14dp"
+		                android:textColor="@color/light_grey_b1"/>
+		            <TextView 
+		                android:id="@+id/query_total_page"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="2dp"
+		                android:text="--"
+		                android:textSize="14dp"
+		                android:textColor="@color/logo_blue"/>
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="2dp"
+		                android:text="页"
+		                android:textSize="14dp"
+		                android:textColor="@color/light_grey_b1"/>
+		        </LinearLayout>
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/query_title_tools_pages"
+		            android:layout_marginTop="1dp"
+		            android:layout_centerHorizontal="true"
+		            android:drawableLeft="@drawable/hint"
+		            android:text="每页最多10条"
+	                android:textSize="12dp"
+		            android:textColor="@color/light_grey_b1"
+		            android:gravity="center"/>
+	        </RelativeLayout>
+	        <!-- 下一页 -->
+	        <Button 
+	            android:id="@+id/query_next_page"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:text="下一页》"
+	            android:textSize="@dimen/text_size_16"
+	            android:textColor="@drawable/text_btn_color"/>
+	    </RelativeLayout>
+        <!-- 结果列表 -->
+        <ListView 
+            android:id="@+id/query_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/query_title_tools"
+	        android:layout_marginLeft="@dimen/margin_left_and_right"
+	        android:layout_marginRight="@dimen/margin_left_and_right">
+            
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

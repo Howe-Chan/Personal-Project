@@ -1,0 +1,49 @@
+<resources>
+    <!-- 自定义相机框组件 -->
+    <declare-styleable name="PreviewBorderView">
+        <attr name="tipText" format="string"/>
+        <attr name="tipTextColor" format="color|reference"/>
+        <attr name="tipTextSize" format="dimension"/>
+    </declare-styleable>
+    <!-- 图片裁剪组件 -->
+    <declare-styleable name="icv_CropImageView">
+        <attr name="icv_img_src" format="reference" />
+        <attr name="icv_crop_mode">
+            <enum name="fit_image" value="0"/>
+            <enum name="ratio_4_3" value="1"/>
+            <enum name="ratio_3_4" value="2"/>
+            <enum name="square" value="3"/>
+            <enum name="ratio_16_9" value="4"/>
+            <enum name="ratio_9_16" value="5"/>
+            <enum name="free" value="6"/>
+            <enum name="custom" value="7"/>
+            <enum name="circle" value="8"/>
+            <enum name="circle_square" value="9"/>
+        </attr>
+        <attr name="icv_background_color" format="reference|color"/>
+        <attr name="icv_overlay_color" format="reference|color"/>
+        <attr name="icv_frame_color" format="reference|color"/>
+        <attr name="icv_handle_color" format="reference|color"/>
+        <attr name="icv_guide_color" format="reference|color"/>
+        <attr name="icv_guide_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr name="icv_handle_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr name="icv_handle_size" format="dimension"/>
+        <attr name="icv_touch_padding" format="dimension"/>
+        <attr name="icv_min_frame_size" format="dimension"/>
+        <attr name="icv_frame_stroke_weight" format="dimension"/>
+        <attr name="icv_guide_stroke_weight" format="dimension"/>
+        <attr name="icv_crop_enabled" format="boolean"/>
+        <attr name="icv_initial_frame_scale" format="float"/>
+        <attr name="icv_animation_enabled" format="boolean"/>
+        <attr name="icv_animation_duration" format="integer"/>
+        <attr name="icv_handle_shadow_enabled" format="boolean"/>
+    </declare-styleable>
+</resources>

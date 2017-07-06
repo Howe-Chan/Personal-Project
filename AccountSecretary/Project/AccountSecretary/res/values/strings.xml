@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">记账小秘</string>
+    <string name="app_copyright">Copyright © 2016 JeanLee. All Rights Reserved</string>
+    
+    <string name="edit_filter_code">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+</resources>

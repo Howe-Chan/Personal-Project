@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用于Spinner框里的字体样式 -->
+<CheckedTextView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textSize="@dimen/text_size_16"
+    android:textColor="@color/light_grey_cc" >
+    
+
+</CheckedTextView>

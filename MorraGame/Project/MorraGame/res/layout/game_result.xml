@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dip"
+    android:layout_height="600dip"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 局数 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/count_1"/>
+	        <TextView 
+	            android:id="@+id/game_result_count_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+	            android:gravity="center"
+	            android:textSize="20dp"
+	            />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dip"
+                android:src="@drawable/count_2"/>
+        </LinearLayout>
+        <!-- 中容器 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView 
+			    android:id="@+id/game_result_user_shot"
+			    android:layout_width="150dip"
+			    android:layout_height="150dip"/>
+			<ImageView 
+			    android:id="@+id/game_result_computer_shot"
+			    android:layout_width="150dip"
+			    android:layout_height="150dip"
+			    android:layout_marginLeft="20dip"/>
+		</LinearLayout>
+		<!-- 游戏规则 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dip"
+		    android:layout_weight="1"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+		    <ImageView 
+		        android:id="@+id/game_result_img"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+		</LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

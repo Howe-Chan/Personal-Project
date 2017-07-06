@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 返回键 -->
+    <ImageButton 
+        android:id="@+id/selfinfo_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:background="@null"/>
+    <!-- 头像 -->
+    <ImageView 
+        android:id="@+id/selfinfo_user_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/default_user_icon"/>
+    
+    <!-- 账号 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="账       号："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp">
+        <TextView 
+            android:id="@+id/selfinfo_user_account"
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    
+    <!-- 类别管理 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="类别管理："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:background="@drawable/edittext_layout_bg">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/spinner_drop_btn"/>
+	    <Spinner 
+	        android:id="@+id/selfinfo_type_manage"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#00000000"/>
+    </RelativeLayout>
+    <!-- 类别管理.按钮 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/selfinfo_type_delete"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginRight="5dp"
+	        android:text="删    除"
+	        android:textSize="@dimen/text_size_20"
+	        android:textColor="@drawable/button_text_color"
+	        android:background="@drawable/button_bg"
+	        android:gravity="center"/>
+	    <Button 
+	        android:id="@+id/selfinfo_type_add"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="5dp"
+	        android:text="增    加"
+	        android:textSize="@dimen/text_size_20"
+	        android:textColor="@drawable/button_text_color"
+	        android:background="@drawable/button_bg"
+	        android:gravity="center"/>
+    </LinearLayout>
+    
+    <!-- 当月结余 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="当月结余："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp">
+        <TextView 
+            android:id="@+id/selfinfo_month_surplus"
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    
+    <!-- 当年结余 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="当年结余："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp">
+        <TextView 
+            android:id="@+id/selfinfo_year_surplus"
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    
+    <!-- 注销 -->
+    <Button 
+        android:id="@+id/selfinfo_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:layout_marginTop="5dp"
+        android:text="注    销"
+        android:textSize="@dimen/text_size_20"
+        android:textColor="@drawable/red_btn_text_color"
+        android:background="@drawable/red_btn_bg"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <!-- 标题 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_grey"
+        android:gravity="center">
+        <TextView 
+            android:id="@+id/dialog_button_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/logo_blue"/>
+    </LinearLayout>
+
+    <!-- 内容 -->
+    <LinearLayout 
+        android:id="@+id/dialog_button_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/white">
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="20dp"/>
+    </LinearLayout>
+    
+    <!-- 按钮 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/dialog_button_leftbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="按 钮 1"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@drawable/button_text_color"/>
+        <Button 
+            android:id="@+id/dialog_button_rightbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="按 钮 2"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@drawable/button_text_color"
+            android:visibility="gone"/>
+    </LinearLayout>
+    
+</LinearLayout>

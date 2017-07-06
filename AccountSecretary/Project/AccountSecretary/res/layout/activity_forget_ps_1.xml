@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 返回键 -->
+    <ImageButton 
+        android:id="@+id/forget_ps1_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:background="@null"/>
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginTop="5dp"
+       	android:layout_gravity="center_horizontal"
+        android:text="密保问题验证"
+        android:textSize="18dp"
+        android:textColor="@color/logo_blue"/>
+    <!-- 密保问题 -->
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp">
+        <TextView 
+            android:id="@+id/forget_ps1_question"
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"
+            android:text="密保问题"/>
+    </LinearLayout>
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp">
+        <EditText 
+            android:id="@+id/forget_ps1_answer"
+            style="@style/EditText_Style"
+		    android:inputType="text"
+	        android:imeOptions="actionDone"
+            android:background="@null"/>
+    </LinearLayout>
+	<!-- 按钮 -->
+    <Button 
+        android:id="@+id/forget_ps1_next"
+        style="@style/Button_Style"
+        android:layout_marginTop="5dp"
+        android:text="下 一 步"/>
+
+</LinearLayout>

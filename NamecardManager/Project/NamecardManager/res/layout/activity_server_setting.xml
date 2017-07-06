@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 返回键 -->
+    <ImageButton 
+        android:id="@+id/server_setting_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:background="@drawable/image_button_bg"/>
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginTop="5dp"
+       	android:layout_gravity="center_horizontal"
+        android:text="服务器配置"
+        android:textSize="18dp"
+        android:textColor="@color/logo_blue"/>
+    <!-- 服务器IP -->
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp">
+        <TextView 
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"
+            android:text="IP 地址"
+            android:visibility="gone"/>
+        <EditText 
+            android:id="@+id/server_setting_ip"
+            style="@style/EditText_Style"
+            android:inputType="text"
+            android:hint="如：http://localhost:8080/Server"
+            android:maxLength="55"
+            android:imeOptions="actionDone"
+            android:background="@null"/>
+    </LinearLayout>
+    <!-- 端口 -->
+    <LinearLayout 
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+        <TextView 
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"
+            android:text="端    口"/>
+        <EditText 
+            android:id="@+id/server_setting_port"
+            style="@style/EditText_Style"
+            android:inputType="number"
+            android:maxLength="5"
+            android:imeOptions="actionDone"
+            android:background="@null"/>
+    </LinearLayout>
+	<!-- 按钮 -->
+    <Button 
+        android:id="@+id/server_setting_ok"
+        style="@style/Button_Style"
+        android:layout_marginTop="5dp"
+        android:text="确 认 配 置"/>
+
+</LinearLayout>

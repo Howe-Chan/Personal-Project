@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lee.accountsecretary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".ASApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- android:screenOrientation="portrait"	竖屏 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 加载页面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.LoadingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登陆页面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 注册页面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.SignActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 忘记密码页面1 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.ForgetPS1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 忘记密码页面2 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.ForgetPS2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 服务器配置界面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.ServerSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 记账界面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.RecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人信息界面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.SelfInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 账目查询界面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.RecordQueryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 账目明细界面 -->
+        <activity
+            android:name="com.lee.accountsecretary.ui.RecordDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+    </application>
+
+</manifest>

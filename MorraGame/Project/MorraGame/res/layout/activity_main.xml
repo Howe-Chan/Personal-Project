@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <!-- 上容器 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="@dimen/main_img_width"
+                android:layout_height="@dimen/main_img_hegiht"
+                android:src="@drawable/morra_title"/>
+        </LinearLayout>
+        <!-- 下容器 -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true">
+	            <!-- 游戏类型 -->
+	            <Spinner 
+	                android:id="@+id/game_type_spinner"
+	                android:layout_width="150dip"
+	                android:layout_height="40dip"
+	                android:background="@drawable/game_type"
+	                />
+	            <!-- 开始游戏 -->
+	            <ImageButton 
+	                android:id="@+id/start_game_btn"
+	                android:layout_width="200dip"
+	                android:layout_height="50dip"
+	                android:background="@drawable/start_game_btn"
+	                android:layout_marginTop="20dip"
+	                />
+            </LinearLayout>
+            <!-- 功能键 -->
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical">
+	            <ImageButton 
+	                android:id="@+id/top_btn"
+	                android:layout_width="30dip"
+	                android:layout_height="30dip"
+	                android:background="@drawable/top_btn"
+	                android:layout_marginLeft="10dip"
+	                android:layout_alignParentLeft="true"
+	                />
+	            <ImageButton 
+	                android:id="@+id/setting_btn"
+	                android:layout_width="30dip"
+	                android:layout_height="30dip"
+	                android:background="@drawable/setting_btn"
+	                android:layout_marginRight="10dip"
+	                android:layout_alignParentRight="true"
+	                />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+</LinearLayout>

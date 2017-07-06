@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_login.xml" />
+        <ignore path="res/layout/activity_record.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_login.xml" />
+        <ignore path="res/layout/activity_record.xml" />
+    </issue>
+    <issue id="SpUsage">
+        <ignore path="res/layout/activity_record.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res/layout/activity_login.xml" />
+    </issue>
+    <issue id="UselessLeaf">
+        <ignore path="res/layout/activity_login.xml" />
+    </issue>
+</lint>

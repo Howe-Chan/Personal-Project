@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    
+    <!-- 账号 -->
+    <LinearLayout 
+        android:id="@+id/login_account_layout"
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_centerInParent="true">
+        <TextView 
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"
+            android:text="账    号"/>
+        <!-- android:numeric="integer|signed|decimal"	整数|正负数|小数 -->
+        <EditText 
+            android:id="@+id/login_user_account"
+            style="@style/EditText_Style"
+            android:maxLength="10"
+            android:inputType="textVisiblePassword"
+            android:imeOptions="actionNext"
+            android:background="@null"/>
+    </LinearLayout>
+    <!-- 头像 -->
+    <ImageView 
+        android:id="@+id/login_user_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/login_account_layout"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/default_user_icon"/>
+    <!-- 密码 -->
+    <LinearLayout 
+        android:id="@+id/login_password_layout"
+        style="@style/EditText_LinearLayout_Style"
+        android:layout_below="@id/login_account_layout"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true">
+        <TextView 
+            style="@style/EditText_TextView_Style"
+            android:layout_marginLeft="10dp"
+            android:text="密    码"/>
+        <EditText 
+            android:id="@+id/login_user_password"
+            style="@style/EditText_Style"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:background="@null"/>
+    </LinearLayout>
+    <!-- 登陆 -->
+    <Button 
+        android:id="@+id/login_btn_login"
+        style="@style/Button_Style"
+        android:layout_below="@id/login_password_layout"
+        android:layout_marginTop="20dp"
+        android:text="登    录"/>
+    <!-- 底栏 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp">
+        <TextView 
+            android:id="@+id/login_txt_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="忘记密码？"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/light_grey_b1"/>
+        <TextView 
+            android:id="@+id/login_txt_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="新用户注册"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/light_grey_b1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

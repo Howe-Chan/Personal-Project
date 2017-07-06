@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="确认删除类别："
+	        android:textSize="@dimen/text_size_16"
+	        android:textColor="@color/light_grey_cc"/>
+	    <TextView 
+	        android:id="@+id/content_record_type_delete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:text="测试类别"
+	        android:textSize="@dimen/text_size_16"
+	        android:textColor="@color/logo_blue"/>
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:text="确认删除后，该类别下的所有账目将归结于系统类别【其他】"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/light_grey_cc"/>
+
+</LinearLayout>

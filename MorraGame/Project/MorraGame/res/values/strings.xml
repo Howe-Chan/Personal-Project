@@ -1,0 +1,14 @@
+<resources>
+	<!-- appName -->
+    <string name="app_name">人机划拳</string>
+    
+	<!-- loading -->
+	<string name="Loading">正在加载……</string>
+    
+    <!-- activity_top -->
+    <string name="top_item_id">排名</string>
+    <string name="top_item_username">用户名</string>
+    <string name="top_item_grade">分数</string>
+    
+
+</resources>

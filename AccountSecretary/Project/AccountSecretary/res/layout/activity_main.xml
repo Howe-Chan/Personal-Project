@@ -1,0 +1,105 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+	<!-- 标题栏 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_grey">
+        <!-- 用户头像 -->
+        <ImageView 
+            android:id="@+id/main_user_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_user_icon"/>
+        <TextView 
+            android:id="@+id/main_title_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_user_icon"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            android:text="亲爱的"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/light_grey_cc"/>
+        <!-- 用户名 -->
+        <TextView 
+            android:id="@+id/main_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_title_text_1"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            android:text="666888"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/logo_blue"/>
+        <TextView 
+            android:id="@+id/main_title_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/main_user_name"
+            android:layout_marginLeft="2dp"
+            android:layout_centerVertical="true"
+            android:text="，欢迎回来"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/light_grey_cc"/>
+        <!-- 设置 -->
+        <ImageView 
+            android:id="@+id/main_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/main_setting"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- app logo -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/main_app_name"/>
+        </LinearLayout>
+        <!-- 按钮 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button 
+                android:id="@+id/main_btn_record"
+                style="@style/Button_Style"
+                android:text="记    账"/>
+            <Button 
+                android:id="@+id/main_btn_query"
+                style="@style/Button_Style"
+                android:layout_marginTop="30dp"
+                android:text="查 询 账 单"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

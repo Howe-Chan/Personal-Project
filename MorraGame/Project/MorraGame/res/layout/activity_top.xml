@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <!-- 排行榜标题 -->
+    <ImageView 
+        android:layout_width="150dip"
+        android:layout_height="60dip"
+        android:src="@drawable/top_title"
+        android:layout_gravity="center_horizontal"/>
+    <!-- 标题栏 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal">
+        <!-- 排名 -->
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/top_id"/>
+        </LinearLayout>
+        <!-- 用户名 -->
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/user_name_txt"/>
+        </LinearLayout>
+        <!-- 分数 -->
+        <LinearLayout 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/grade_txt"/>
+        </LinearLayout>
+    </LinearLayout>
+	<!-- 分隔线 -->
+	<ImageView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/greyline"
+	    />
+	<!-- 数据项 -->
+	<ListView 
+	    android:id="@+id/top_listview_item"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	</ListView>
+    
+</LinearLayout>

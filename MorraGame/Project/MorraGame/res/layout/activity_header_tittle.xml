@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_title_hegiht"
+    android:gravity="center"
+    android:background="@drawable/title_bg">
+
+    <TextView
+        android:id="@+id/textview_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/primary_title_size"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:shadowColor="#40000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"/>
+
+</LinearLayout>

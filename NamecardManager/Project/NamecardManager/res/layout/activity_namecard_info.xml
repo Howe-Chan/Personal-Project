@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 返回键 -->
+    <ImageButton 
+        android:id="@+id/info_namecard_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:background="@drawable/image_button_bg"/>
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_gravity="center_horizontal"
+        android:text="名 片 信 息"
+        android:textSize="18dp"
+        android:textColor="@color/logo_blue"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+		<!-- 按钮 -->
+		<LinearLayout 
+		    android:id="@+id/info_namecard_btn_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/button_height"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginTop="5dp"
+		    android:layout_marginLeft="@dimen/margin_left_and_right"
+		    android:layout_marginRight="@dimen/margin_left_and_right"
+		    android:orientation="horizontal">
+		    <!-- 删除 -->
+		    <Button 
+		        android:id="@+id/info_namecard_delete"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:text="删    除"
+		        android:textSize="@dimen/text_size_20"
+		        android:textColor="@drawable/button_text_color"
+		        android:background="@drawable/button_bg"
+		        android:gravity="center"/>
+		    <!-- 更改 -->
+		    <Button 
+		        android:id="@+id/info_namecard_update"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="5dp"
+		        android:text="更    改"
+		        android:textSize="@dimen/text_size_20"
+		        android:textColor="@drawable/button_text_color"
+		        android:background="@drawable/button_bg"
+		        android:gravity="center"/>
+		</LinearLayout>
+	    <!-- 信息框 -->
+	    <ScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@id/info_namecard_btn_layout"
+	        android:layout_marginTop="5dp"
+	        android:scrollbars="none">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+		        
+			    <!-- 姓名 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="姓    名"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_name"
+			            style="@style/EditText_Style"
+	            		android:maxLength="10"
+			            android:inputType="text"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 职称 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="职    称"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_jobtitle"
+			            style="@style/EditText_Style"
+	            		android:maxLength="50"
+			            android:inputType="text"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 公司名称 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="公司名称"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_companyname"
+			            style="@style/EditText_Style"
+	            		android:maxLength="50"
+			            android:inputType="text"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 公司地址 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="公司地址"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_companyaddress"
+			            style="@style/EditText_Style"
+	            		android:maxLength="50"
+			            android:inputType="text"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 手机 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="手    机"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_mobile"
+			            style="@style/EditText_Style"
+	            		android:maxLength="11"
+			            android:inputType="number"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 电话 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="电    话"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_tel"
+			            style="@style/EditText_Style"
+	            		android:maxLength="13"
+			            android:inputType="phone"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 传真 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="传    真"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_fax"
+			            style="@style/EditText_Style"
+	            		android:maxLength="13"
+			            android:inputType="phone"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 邮件 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="邮    件"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_email"
+			            style="@style/EditText_Style"
+			            android:inputType="textEmailAddress"
+			            android:imeOptions="actionNext"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+			    <!-- 网页 -->
+			    <LinearLayout 
+			        style="@style/EditText_LinearLayout_Style"
+			        android:layout_marginTop="5dp">
+			        <TextView 
+			            style="@style/EditText_TextView_Style"
+			            android:layout_marginLeft="10dp"
+			            android:text="网    页"/>
+			        <EditText 
+			            android:id="@+id/info_namecard_web"
+			            style="@style/EditText_Style"
+			            android:inputType="textUri"
+			            android:imeOptions="actionDone"
+	            		android:background="@null"/>
+	    		</LinearLayout>
+	    		
+            </LinearLayout>
+	    </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

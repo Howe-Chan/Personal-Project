@@ -1,0 +1,73 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 关闭多点触摸功能 -->
+        <item name="android:windowEnableSplitTouch">false</item>
+		<item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <!-- Global Button Style -->
+    <style name="Button_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_and_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_left_and_right</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+    </style>
+    <!-- Global EditText LinearLayout Style -->
+    <style name="EditText_LinearLayout_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_and_right</item>
+        <item name="android:layout_marginRight">@dimen/margin_left_and_right</item>
+        <item name="android:background">@drawable/edittext_layout_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- Global EditText TextView Style -->
+    <style name="EditText_TextView_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/light_grey_b1</item>
+    </style>
+    <!-- Global EditText Style -->
+    <style name="EditText_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@drawable/edittext_text_color</item>
+    </style>
+    <!-- custom dialog -->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <!-- loading dialog -->
+    <style name="LoadingDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_loading_bg</item>
+    </style>
+    
+</resources>

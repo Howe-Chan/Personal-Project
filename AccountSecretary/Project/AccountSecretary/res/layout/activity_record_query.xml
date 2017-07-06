@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <!-- 返回键 -->
+    <ImageButton 
+        android:id="@+id/recordquery_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back"
+        android:background="@null"/>
+    <!-- 标题 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginTop="5dp"
+       	android:layout_gravity="center_horizontal"
+        android:text="查看账单"
+        android:textSize="18dp"
+        android:textColor="@color/logo_blue"/>
+	
+	<!-- 查询条件 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="选择查询条件："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:background="@drawable/edittext_layout_bg">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/spinner_drop_btn"/>
+	    <Spinner 
+	        android:id="@+id/recordquery_condition"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#00000000"/>
+    </RelativeLayout>
+	<!-- 选择日期 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="选择日期："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+	    <!-- 年 -->
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView 
+                android:id="@+id/recordquery_year_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="年"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/light_grey_cc"/>
+            <LinearLayout 
+                android:id="@+id/recordquery_year_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/recordquery_year_text"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_layout_bg"
+                android:gravity="center">
+		        <TextView 
+		        	android:id="@+id/recordquery_year_input"
+		            style="@style/EditText_TextView_Style"
+		            android:layout_marginLeft="10dp"
+		            android:text="- - - -"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- 月 -->
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView 
+                android:id="@+id/recordquery_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="月"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/light_grey_cc"/>
+            <LinearLayout 
+                android:id="@+id/recordquery_month_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/recordquery_month_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/edittext_layout_bg"
+                android:gravity="center">
+		        <TextView 
+		        	android:id="@+id/recordquery_month_input"
+		            style="@style/EditText_TextView_Style"
+		            android:layout_marginLeft="10dp"
+		            android:text="- -"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+	<!-- 账目类别 -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="选择账目类别："
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/logo_blue"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:layout_marginRight="@dimen/margin_left_and_right"
+        android:background="@drawable/edittext_layout_bg">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/spinner_drop_btn"/>
+	    <Spinner 
+	        android:id="@+id/recordquery_type"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#00000000"/>
+    </RelativeLayout>
+    
+    <!-- 查询 -->
+    <Button 
+        android:id="@+id/recordquery_btn_query"
+        style="@style/Button_Style"
+        android:layout_marginTop="5dp"
+        android:text="查    询"/>
+    
+</LinearLayout>
